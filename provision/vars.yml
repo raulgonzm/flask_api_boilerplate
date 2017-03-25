@@ -1,0 +1,21 @@
+project_name: flask_api
+application_name: flask_api
+virtualenv_name: flask_api
+
+db_user: mercadona
+db_name: mercadona_db
+db_password: mercadona
+db_encoding: 'UTF-8'
+db_lc_collate: 'es_ES.UTF-8'
+db_lc_ctype: 'es_ES.UTF-8'
+
+developer_ip: 192.168.1.51
+
+# Application settings.
+root_path: "/vagrant"
+virtualenv_root_path: "{{ root_path }}/.virtualenvs"
+virtualenv_path: "{{ virtualenv_root_path }}/{{ virtualenv_name }}"
+project_path: "{{ root_path }}/{{ project_name }}"
+application_log_dir: "{{ virtualenv_path }}/logs"
+application_log_file: "{{ application_log_dir }}/gunicorn_supervisor.log"
+requirements_file: "{{ root_path }}/requirements/devel.txt"

@@ -1,0 +1,20 @@
+---
+
+#virutalenv settings
+python_bin_path: "/usr/bin"
+
+#Django settings
+django_settings_file: "{{ application_name }}.settings.vagrant"
+django_secret_key: "i5lmgjb2sfnacw2h84v_jltes5ydubb28iz"
+
+# Django environment variables.
+django_environment:
+  DJANGO_SETTINGS_MODULE: "{{ django_settings_file }}"
+  DJANGO_SECRET_KEY: "{{ django_secret_key }}"
+  SECRET_KEY: "{{ django_secret_key }}"
+  MEDIA_ROOT: "{{ nginx_media_dir }}"
+  STATIC_ROOT: "{{ nginx_static_dir }}"
+  DATABASE_NAME: "{{ db_name }}"
+  DATABASE_USER: "{{ db_user }}"
+  DATABASE_PASSWORD: "{{ db_password }}"
+  BROKER_URL: "{{ broker_url }}"
