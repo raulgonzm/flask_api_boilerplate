@@ -9,6 +9,7 @@ app.config.from_object('config')
 
 api = Api(app)
 
-from app.routers.conferences import ConferencesAPIView
+from app.routers.conferences import ConferencesListCreateAPIView, ConferencesRetrieveUpdateDeleteAPIView
 
-api.add_resource(ConferencesAPIView, '/conferences/')
+api.add_resource(ConferencesListCreateAPIView, '/conferences/')
+api.add_resource(ConferencesRetrieveUpdateDeleteAPIView, '/conferences/<conference_id>/')
