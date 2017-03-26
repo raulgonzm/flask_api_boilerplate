@@ -1,3 +1,10 @@
+# Python imports
+
+# Core Flask imports
+
+# Third-Party imports
+
+# Apps Imports
 from app import app
 
 if __name__ == "__main__":

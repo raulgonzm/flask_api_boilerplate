@@ -1,3 +1,10 @@
+# Python imports
+
+# Core Flask imports
+
+# Third-Party imports
+
+# Apps Imports
 from .conferences import ConferencesListCreateAPIView, ConferencesRetrieveUpdateDeleteAPIView
 
 

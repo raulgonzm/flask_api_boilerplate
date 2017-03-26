@@ -1,4 +1,10 @@
+# Python imports
+
+# Core Flask imports
+
+# Third-Party imports
 from flask_restful import Resource
+# Apps Imports
 
 class ConferencesListCreateAPIView(Resource):
 
