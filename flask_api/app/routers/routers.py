@@ -5,7 +5,7 @@
 # Third-Party imports
 
 # Apps Imports
-from .conferences import ConferencesListCreateAPIView, ConferencesRetrieveUpdateDeleteAPIView
+from .conferences import init_conferences_routes
 
 
 class Router(object):
@@ -14,5 +14,4 @@ class Router(object):
 		self.__init_conferences_router(api)
 
 	def __init_conferences_router(self, api):
-		api.add_resource(ConferencesListCreateAPIView, '/conferences/')
-		api.add_resource(ConferencesRetrieveUpdateDeleteAPIView, '/conferences/<conference_id>/')
+		init_conferences_routes(api)
