@@ -9,5 +9,6 @@
 
 ```
 vagrant up
+vagrant ssh
 workon flask_api
 ```
