@@ -12,3 +12,9 @@ vagrant up
 vagrant ssh
 workon flask_api
 ```
+
+## Run Server
+
+```
+python server.py 
+```
