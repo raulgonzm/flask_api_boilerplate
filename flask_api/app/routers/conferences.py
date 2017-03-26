@@ -1,7 +1,8 @@
-from flask import Blueprint
+from flask_restful import Resource
 
-mod = Blueprint('conferences', __name__)
+class ConferencesAPIView(Resource):
+	
+    def get(self):
+        return {'hello': 'world'}
 
-@mod.route('/conferences/')
-def get_routes():
-	return "Hello World"
+
